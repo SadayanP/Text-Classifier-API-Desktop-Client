@@ -21,15 +21,13 @@ The system supports user authentication, prediction logging, and human feedback 
 
 ## Tech Stack
 
-| Layer      | Technology                              |
-|------------|------------------------------------------|
-| Backend    | FastAPI, Uvicorn, Pydantic               |
-| ML Model   | Hugging Face Transformers + PyTorch      |
-| Auth       | JWT (`python-jose`) + bcrypt (`passlib`) |
-| Database   | SQLite                                   |
-| Desktop UI | PyQt5                                    |
-| Packaging  | PyInstaller                              |
-| Testing    | pytest                                   |
+- **Backend:** FastAPI, Uvicorn, Pydantic
+- **ML Model:** Hugging Face Transformers + PyTorch
+- **Auth:** JWT (`python-jose`) + bcrypt (`passlib`)
+- **Database:** SQLite
+- **Desktop UI:** PyQt5
+- **Packaging:** PyInstaller
+- **Testing:** pytest
 
 ---
 
@@ -83,12 +81,12 @@ textdist/TextClassifier/TextClassifier.exe
 The backend must be running for the client to work.
 
 API Overview
-Method,Endpoint,Auth required,Description
-GET,/health,No,Health check
-POST,/register,No,Create a new user
-POST,/login,No,Get JWT access token
-POST,/classify,Yes,Classify text sentiment
-POST,/feedback,Yes,Submit feedback on a prediction
+
+GET /health — Health check (no auth)
+POST /register — Create a new user (no auth)
+POST /login — Get JWT access token (no auth)
+POST /classify — Classify text sentiment (auth required)
+POST /feedback — Submit feedback on a prediction (auth required)
 
 Example: Classify
 Bashcurl -X POST http://127.0.0.1:8000/classify \
