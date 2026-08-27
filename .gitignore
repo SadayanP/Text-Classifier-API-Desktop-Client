@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment & secrets
+.env
+
+# Database
+classifier.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Testing
+.pytest_cache/
+
+# PyInstaller
+build/
+dist/
+*.spec
