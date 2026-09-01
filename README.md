@@ -6,6 +6,14 @@ The system supports user authentication, prediction logging, and human feedback 
 
 ---
 
+## Screenshots
+
+![Login screen](screenshots/login.png)
+
+![Classify screen](screenshots/classify.png)
+
+![Feedback](screenshots/feedback.png)
+
 ## Features
 
 - Model serving with Hugging Face Transformers (`distilbert-base-uncased-finetuned-sst-2-english`)
