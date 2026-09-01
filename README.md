@@ -142,3 +142,8 @@ Support multi-class or more advanced models
 Deploy the API
 Add more comprehensive test coverage
 Improve model confidence handling / abstention for low-confidence predictions
+
+
+License
+MIT
+textAfter pasting, check the GitHub preview (or any markdown preview). The code blocks and headings should now display correctly.
