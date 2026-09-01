@@ -14,6 +14,10 @@ The system supports user authentication, prediction logging, and human feedback 
 
 ![Feedback](screenshots/feedback.png)
 
+## Demo
+
+[Watch the demo (45s)](https://youtu.be/rDi4urBmgO8)
+
 ## Features
 
 - Model serving with Hugging Face Transformers (`distilbert-base-uncased-finetuned-sst-2-english`)
