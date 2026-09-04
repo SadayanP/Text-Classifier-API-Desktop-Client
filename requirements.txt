@@ -4,7 +4,11 @@ transformers
 torch
 python-jose[cryptography]
 passlib[bcrypt]
+bcrypt==4.0.1
+python-dotenv
 PyQt5
 requests
 python-multipart
 pydantic
+pytest
+httpx
